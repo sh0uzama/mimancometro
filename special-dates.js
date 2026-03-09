@@ -1,1 +1,1 @@
-window.SPECIAL_DATES = ["2025-12-25", "2026-01-01", "2026-08-15"];
+window.SPECIAL_DATES = ["2025-12-25"];

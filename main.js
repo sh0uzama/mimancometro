@@ -47,6 +47,8 @@ function formatDate(key) {
   const megaValue = Math.floor(rng() * 8990) + 11;
   const value = isSpecial ? 5 : megaValue;
 
+  document.getElementById("num").textContent = `${value}`;
+
   // percentage of the track (10 = 100%)
   const pct = (value / 10) * 100;
   const fill = document.getElementById("fill");
