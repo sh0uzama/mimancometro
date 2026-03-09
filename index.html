@@ -1,13 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mimancometro</title>
+    <title>Mimancometro</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="/mimancometro.png" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <h1>Mimancometro per Lory</h1>
+    <p class="subtitle" id="date"></p>
+
+    <p class="explanation">Questo misuratore indica quanto mi manchi oggi.</p>
+
+    <div class="scale">
+      <span>0</span>
+      <span>5</span>
+      <span>10</span>
+    </div>
+    <div class="track">
+      <div class="fill" id="fill">
+        <span class="value-label" id="val"></span>
+      </div>
+    </div>
+
+    <p class="special-msg" id="msg"></p>
+
+    <script type="module" src="special-dates.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
